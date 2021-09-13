@@ -9,3 +9,34 @@ body,html{
     font-weight: 700;
     color: #F9B23D;
 }
+
+.player-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.vs-text{
+    font-weight: 700;
+    font-size: 144px;
+    color: #BD0000;
+}
+.hand-sign{
+    margin-bottom: 0.675rem;
+}
+.refresh-img{
+    width: 4%;
+}
+.refresh-img:hover{
+    cursor: pointer;
+}
+.hand-sign img{
+    width: 40%;
+    padding-inline: 32px;
+    padding-block: 24px;
+}
+
+.hand-sign img:hover,.hand-sign img.selected{
+    background-color: #C4C4C4;
+    border-radius: 16px;
+    cursor: pointer;
+}
