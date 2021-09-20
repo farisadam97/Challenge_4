@@ -32,34 +32,38 @@
             <div class="col-3">
                 <div class="d-flex flex-column">
                     <div class="ml-auto text-center">
-                        <p class="player-text">Player 1</p>
-                        <div class="hand-sign">
-                            <img src="./assets/batu.png" alt="" class="selected">
+                        <p class="player-text">Player</p>
+                        <div class="hand-sign" >
+                            <img src="./assets/batu.png" alt="" class="" data-tangan ="batu"  onclick='dataTanganPlayer(this)'>
                         </div>
                         <div class="hand-sign">
-                            <img src="./assets/gunting.png" alt="" class="">
+                            <img src="./assets/gunting.png" alt="" class="" data-tangan ="gunting" onclick='dataTanganPlayer(this)'>
                         </div>
-                        <div class="hand-sign">
-                            <img src="./assets/kertas.png" alt="" class="">
+                        <div class="hand-sign" data-tangan ="kertas">
+                            <img src="./assets/kertas.png" alt="" class="" data-tangan ="kertas" onclick='dataTanganPlayer(this)'>
                         </div>
                     </div>
                 </div>
                 
             </div>
             <div class="col-3 align-self-center">
-                <p class="vs-text text-center my-auto">VS</p>
+                <p class="vs-text text-center my-auto" id="vs-text">VS</p>
+                <div class="result p-4 mx-auto d-none" id="result">
+                    <p class="text-center text-white mb-0" id="result-text">
+                    </p>
+                </div>
             </div>
             <div class="col-3">
                 <div class="d-flex flex-column">
                     <div class="ml-auto text-center">
                         <p class="player-text">COM</p>
-                        <div class="hand-sign">
-                            <img src="./assets/batu.png" alt="" class="selected">
+                        <div class="hand-sign computer">
+                            <img src="./assets/batu.png" alt="" class="">
                         </div>
-                        <div class="hand-sign">
+                        <div class="hand-sign computer">
                             <img src="./assets/gunting.png" alt="" class="">
                         </div>
-                        <div class="hand-sign">
+                        <div class="hand-sign computer">
                             <img src="./assets/kertas.png" alt="" class="">
                         </div>
                     </div>
@@ -68,11 +72,11 @@
         </div>
         <div class="row m-0 w-100">
             <div class="col-12 text-center">
-                <img src="./assets/refresh.png" alt="" class="refresh-img">
+                <img src="./assets/refresh.png" alt="" class="refresh-img" onclick='resetButton()'>
             </div>
         </div>
     </div>
-    <!-- <div class="modal-backdrop"></div> -->
+    <div class="modal-backdrop d-none" id="modal-backdrop"></div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -81,5 +85,4 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
 </script>
 <script src="app.js"></script>
-
 </html>

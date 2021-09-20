@@ -53,3 +53,19 @@ body,html{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+.hand-sign img.selected{
+    cursor: default;
+}
+.result{
+    width: 300px;
+    border-radius: 8px;
+    font-size: 38px;
+    font-weight: 600;
+    transform: rotate(-15deg);
+}
+.result.win{
+    background-color: #4C9654;
+}
+.result.draw{
+    background-color: #035B0C;
+}
