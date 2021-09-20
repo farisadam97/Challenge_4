@@ -57,9 +57,6 @@ function resetButton() {
     resultText.innerHTML =""
 
     var selectedDiv = document.getElementsByClassName('selected')
-    for(var i=0;i<selectedDiv.length;i++){
-
-    }
     while (selectedDiv.length)
         selectedDiv[0].classList.remove("selected");
 
